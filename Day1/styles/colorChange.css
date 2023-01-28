@@ -1,0 +1,9 @@
+.contanier{
+display: grid;
+place-items: center;
+}
+p{
+    margin-top: 20px;
+    width: 40%;
+    color: rgb(0, 0, 0);
+}
