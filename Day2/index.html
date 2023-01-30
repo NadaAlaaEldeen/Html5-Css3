@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="microData">
+      <h2>Microdata</h2>
+      <div itemscope itemtype="http://data-vocabulary.org/Organization">
+        <h2 itemprop="name">SD & Gaming CoE ITI</h2>
+        <h2 itemprop="tel">35355695</h2>
+        <h2 itemprop="url">htttp://www.iti.gov.eg/</h2>
+
+        <div itemscope itemtype="http://data-vocabulary.org/Address">
+          <span itemprop="street-address"
+            >km 28 cairo-Alexandria Desert Road</span
+          >
+          <span itemprop="location">Smart Village</span>
+          <span itemprop="region">Giza</span>
+          <span itemprop="country-name">Egypt</span>
+          <span itemprop="postal-code">11371</span>
+        </div>
+        <div itemscope itemtype="http://data-vocabulary.org/Geo">
+          <span itemprop="latitude">38.25323N</span>
+          <span itemprop="longitude">77.0040W</span>
+        </div>
+      </div>
+    </div>
+    <div class="sections">
+      <section class="section">
+        <h1>section 1</h1>
+        <form action="./welcome.html" target="_blank">
+          <input
+            type="text"
+            pattern="[A-Za-z]{5}"
+            required
+            placeholder="enter your Name"
+            id="user"
+          />
+          <p>the required user name contain only alphabet</p>
+          <input
+            id="userEmail"
+            type="email"
+            placeholder="enter your email"
+            required
+          />
+          <p>the required email must be valied email</p>
+
+          <input type="submit" id="submit-btn" />
+        </form>
+      </section>
+      <section class="section">
+        <h1>section 2</h1>
+        <button id="summingUp">summing up</button>
+        <button id="changeBackground">change background</button>
+      </section>
+      <section class="section">
+        <h1>section 3</h1>
+        <button id="location">Show Location</button>
+      </section>
+    </div>
+    <script src="./scripts/day2.js"></script>
+  </body>
+</html>

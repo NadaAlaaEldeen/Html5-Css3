@@ -42,7 +42,8 @@ input:invalid + p{
     animation-duration: 4s;
     animation-direction: alternate;
     animation-delay: 0.5s;
-animation-iteration-count: infinite;}
+animation-iteration-count: infinite;
+}
 @keyframes hoverDiv{
     0%{
         background-color: #cd5413;

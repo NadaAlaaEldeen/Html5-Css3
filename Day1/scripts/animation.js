@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
       (z = startY + (endY - startY) * amount)
     );
     console.log(y == canvas.width, z);
-    if (Math.floor(y) == canvas.width && Math.floor(z) == canvas.height) {
+    if (Math.floor(y) >= canvas.width && Math.floor(z) >= canvas.height) {
       clearInterval(interval);
       this.alert("animation end");
     }
