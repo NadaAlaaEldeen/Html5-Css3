@@ -17,5 +17,24 @@
         <div class="box box5">4</div>
       </div>
     </div>
+    <script>
+      const elem = document.querySelector(".contanier");
+      var pos = 30;
+      window.addEventListener("resize", () => {
+        pos++;
+        elem.style.transform = "rotate(" + pos + "deg)";
+        elem.style.backgroundColor = getRandomColor();
+        elem.style.borderRaduis = "";
+        //   elem.style.left = pos + 'px';
+      });
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
   </body>
 </html>

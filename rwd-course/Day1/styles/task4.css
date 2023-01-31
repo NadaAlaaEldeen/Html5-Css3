@@ -18,13 +18,15 @@ body {
       transform: rotate(30deg);
       /* height: 100vh;
       width: 100vh; */
-      background-color: aqua;
+      background-color: aqua; 
+      border-radius: 15px;
+      /*
       animation-name: rotateEle;
       animation-duration: 4s;
       animation-direction:alternate-reverse;
       animation-delay: 0.05s;
       animation-iteration-count: infinite;
-      border-radius: 15px;
+       */
   }
   .box {
     border-radius: 15px;
