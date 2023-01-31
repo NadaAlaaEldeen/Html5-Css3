@@ -1,0 +1,23 @@
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.myDiv{
+    width: 20vh;
+    height: 10vh;
+    border: 1px solid #456789;
+    padding: 10px;
+    color: beige;
+    background-color: #212b36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 1s ease-in;
+}
+.myDiv:hover{
+transform: scale(1.2);
+}

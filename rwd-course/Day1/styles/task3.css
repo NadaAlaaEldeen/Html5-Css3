@@ -1,0 +1,47 @@
+.contanier{
+    display:grid;
+    grid-auto-rows:minmax(50px,auto);
+    grid-gap:5px;
+    grid-template-areas:
+      "header header header header"
+      "nav contant contant sd"
+      "nav contant contant sd"
+      "nav contant contant sd"
+      "fo fo fo fo "
+  }
+  .box {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .header{
+    background:rgb(185, 243, 252);
+    grid-area:header;
+  }
+  .nav
+  {
+    background:rgb(147, 198, 231);
+    grid-area:nav;
+  }
+  .contant{
+    background:rgb(254, 222, 255);
+    grid-area:contant;
+  }
+  .sd{
+    background:rgb(147, 198, 231);
+    grid-area:sd;
+  }
+  .footer
+  {
+    background:rgb(185, 243, 252);
+    grid-area:fo;
+  }
+  @media (max-width: 768px) {
+    .contanier {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+    }
+  }
